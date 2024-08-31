@@ -1,0 +1,42 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">CART APP</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" [routerLink]="['/catalog']">Catalog</a>
+          </li>
+          <li class="nav-item">
+            <a [routerLink]="['/cart']" class="nav-link" role="button">Cart ({{items.length}})</a>
+
+            
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+<!-- 
+  <svg xmlns="http://www.w3.org/2000/svg"  class="nav-link" role="button" [routerLink]= "['/cart']" [state]="{items, total}" class="icon icon-tabler icon-tabler-garden-cart" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff2825" fill="none"  stroke-linejoin="round">Cart({{items.length}})
+    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+    <path d="M17.5 17.5m-2.5 0a2.5 2.5 0 1 0 5 0a2.5 2.5 0 1 0 -5 0" />
+    <path d="M6 8v11a1 1 0 0 0 1.806 .591l3.694 -5.091v.055" />
+    <path d="M6 8h15l-3.5 7l-7.1 -.747a4 4 0 0 1 -3.296 -2.493l-2.853 -7.13a1 1 0 0 0 -.928 -.63h-1.323" />
+  </svg> -->
+
+<!-- 
+  <svg xmlns="http://www.w3.org/2000/svg" [routerLink]= "['/catalog']" class="nav-link" role="button" class="icon icon-tabler icon-tabler-clipboard-list" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#6f32be" fill="none" stroke-linecap="round" stroke-linejoin="round">Catalog
+    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+    <path d="M9 5h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-12a2 2 0 0 0 -2 -2h-2" />
+    <path d="M9 3m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v0a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z" />
+    <path d="M9 12l.01 0" />
+    <path d="M13 12l2 0" />
+    <path d="M9 16l.01 0" />
+    <path d="M13 16l2 0" />
+  </svg> -->
